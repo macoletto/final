@@ -1,0 +1,306 @@
+body {
+  background-color: #282828;
+  background-image: url( ../imagenes/modelo0.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+header {
+  width: 100%;
+  float: right;
+  margin: 0%;
+  padding: 0px;
+  box-sizing: border-box;
+  overflow: auto;
+  }
+
+.logo {
+  position: relative;
+  display: inline;
+  float: left;
+  font-size: 22px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items:center;
+  }
+
+
+nav {
+  width: 98%;
+  float: none;
+  margin: 0%;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: auto;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+
+  .nav {
+    height: 300px;
+    width: 100%;
+    background-color: #282828;
+    position: relative;
+  }
+
+  .nav > .nav-header {
+    display: inline;
+  }
+
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #eee;
+    padding: 20px 20px 20px 20px;
+
+  }
+
+  .nav > .nav-btn {
+    display: none;
+  }
+
+  .nav > .nav-links {
+    display: inline;
+    float: left;
+    font-size: 22px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items:center;
+  }
+
+  .nav > .nav-links > a {
+    display: inline-grid;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav > #nav-check {
+    display: none;
+  }
+
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+section {
+  width: 98%;
+  float: left;
+  margin: 1%;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+
+
+aside {
+  width: 98%;
+  float: left;
+  margin: 1%;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+.video {
+  width: 98%;
+  float: left;
+  margin: 1%;
+  border-radius: 30px;
+  padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer {
+  width: 100%;
+  float: left;
+  margin: 0%;
+  padding: 5px;
+  box-sizing: border-box;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+h1 {
+    color: #999999;
+    text-align: right;
+    font-size: 500%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+h3 {
+  background-color: #282828;
+  color: #999999;
+  text-align: right;
+  font-size: 200%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  }
+
+h5 {
+  background-color: #282828;
+  color: #999999;
+  text-decoration-style: double;
+  text-align: right;
+  font-size: 200%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p {
+  font-family: inherit;
+  font-size: 150%;
+  color: #999999;
+  }
+
+
+.cartas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.botonera {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container-fluid {
+  background-color: #282828;
+}
+.navbar {
+  background-color: #282828;
+}
+
+
+
+
+/*Botón whatsapp*/
+.container-boton{
+    background: #2e6329 ;
+    border: 1px solid #fff;
+    position: fixed;
+    z-index: 999;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 25px;
+    padding: 25px;
+    transition: ease 0.3s;
+    animation: efecto 1.2s infinite;
+}
+.container-boton:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.boton{
+    width: 50px;
+    transition: ease 1s;
+}
+@keyframes efecto{
+    0%{
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.85);
+    }
+    100%{
+      box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+    }
+}
+
+@media (max-width: 575px) {
+body {
+    background-image: none;
+    background-color: #000000;
+}
+}
+
+@media (max-width: 991px) {
+body {
+    background-color: #252525;
+}
+}
+
+@media (min-width: 991px) {
+body {
+    background-color: #666666;
+}
+}
